@@ -4,23 +4,10 @@ import 'package:talkr_demo/screens/like_screen.dart';
 import 'package:talkr_demo/theme_manager.dart';
 import 'settings_screen.dart';
 
-void main() => runApp(const DarkMode());
-
 class DarkMode extends StatelessWidget {
   const DarkMode({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return ChangeNotifierProvider<ThemeManager>(
-      create: (context) => ThemeManager(),
-      child: const MaterialAppWithTheme(),
-    );
-  }
-}
-
-class MaterialAppWithTheme extends StatelessWidget {
-  const MaterialAppWithTheme({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
